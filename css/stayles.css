@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cinzel", serif;
+  background: white url(../image/داكن.webp) no-repeat center/cover;
+  position: relative;
+}
+
+body .overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.733);
+}
+
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-color: #ffd700;
+  --transparent-color: rgba(255, 217, 0, 0.075);
+  --section-padding: 100px;
+  --text-shadow: 5px 5px 5px rgba(255, 215, 0, 0.7);
+}
+
+/* ========== Header ========== */
+header {
+  position: relative;
+}
+header .container {
+  position: relative;
+}
+header .container .logo {
+  position: absolute;
+  left: 0;
+  top: 16px;
+  transform: translateX(-35%);
+}
+body[dir="rtl"] .logo {
+  float: right;
+}
+
+body[dir="ltr"] .logo {
+  float: left;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 200px 15px;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 135px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 115px;
+  padding: 0;
+  margin-right: 0;
+}
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: white;
+  text-shadow: 0 0 5px gold;
+}
+
+.nav-links li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: gold;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  z-index: 2;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+.egypt-text a {
+  font-family: "Papyrus", fantasy;
+  font-size: 22px;
+  color: gold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+  transform: rotate(-2deg);
+}
+.language-switch {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  background: none;
+  border: 2px solid goldenrod;
+  color: var(--main-color);
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-radius: 25%;
+}
+
+.lang-btn:hover {
+  background: goldenrod;
+  color: white;
+}
+
+.booking-container {
+  background: #000000b0;
+  padding: 20px;
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  margin: 30px auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: var(--main-color);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: var(--main-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  display: block;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 95%;
+  border: 0.5px solid var(--main-color);
+  background-color: transparent;
+  color: var(--main-color);
+}
+form input[type="number"] {
+  width: 34%;
+}
+select {
+  width: 40%;
+}
+select option {
+  background-color: rgba(0, 0, 0, 0.849);
+}
+select option:hover {
+  background-color: black;
+}
+button:hover {
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}

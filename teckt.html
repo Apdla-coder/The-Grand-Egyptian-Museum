@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teckt /The Grand Egyptian Museum</title>
+    <link rel="stylesheet" href="./css.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/stayles.css" />
+    <link rel="stylesheet" href="../The Grand Egyptian Museum/css/css.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+  </head>
+  <body>
+    <div class="overly"></div>
+    <header>
+      <div class="container">
+        <a class="logo" href="./index.html"
+          ><img
+            src="./image/photo_2025-03-18_21-31-54-removebg-preview.png"
+            width="250px"
+            alt=""
+        /></a>
+        <nav class="navbar">
+          <i class="fa-solid fa-bars toggle-menu"></i>
+          <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li class="egypt-text"><a href="./index.html">Home</a></li>
+            <li><a href="#">HISTORY</a></li>
+            <div class="language-switch">
+              <button class="lang-btn">English</button>
+              <button class="lang-btn">العربية</button>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="booking-container">
+      <h2>Book Your Ticket</h2>
+      <form action="#" method="POST">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <label for="date">Visit Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="ticket-type">Ticket Type</label>
+        <select id="ticket-type" name="ticket-type">
+          <option value="standard">Standard</option>
+          <option value="vip">VIP</option>
+          <option value="student">Student</option>
+        </select>
+
+        <label for="quantity">Number of Tickets</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="1"
+          max="10"
+          value="1"
+          required
+        />
+
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+        <footer>
+      <div class="container">
+        <div class="info-content">
+          <div class="contact">
+            <h2>call us</h2>
+            <ul>
+              <li><i class="fa-solid fa-phone-volume"></i> : +20235317344</li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:Tourism_info@easwaaqmisr.com"> : Tourism_info@easwaaqmisr.com</a>
+                 </a
+                >
+              </li>
+              <li class="active">© Developed by Abdullah Hani</li>
+            </ul>
+          </div>
+          <div class="Social">
+            <h2>FOLLOW US</h2>
+            <ul>
+              <li><a href="https://www.facebook.com/GrandEgyptianMuseum/"><i class="fa-brands fa-facebook"></i>  </a></li>
+              <li><a href="https://www.instagram.com/grandegyptianmuseum/"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.tiktok.com/@grandegyptianmuseum?_t=8mwhZT5wHyP&_r=1"><i class="fa-brands fa-tiktok"></i> </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/master.js"></script>
+
+  </body>
+</html>
